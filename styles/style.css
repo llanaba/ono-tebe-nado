@@ -1,1 +1,46 @@
-/* место для вашего кода */
+body {
+  outline: 1px solid black;
+}
+
+.header {
+  display: grid;
+  /* 136px — размер логотипа по центру хедера */
+  grid-template-columns: 1fr 136px 1fr;
+  padding: 92px 24px 96px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__links-list {
+  display: flex;
+  list-style: circle;
+  font-size: 18px;
+  line-height: 1.3;
+  gap: 24px;
+  justify-content: center;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active {
+  border-bottom: 1px solid #000;
+}
+
+.address {
+  font-size: 18px;
+  line-height: 1.3;
+  font-style: normal;
+  width: 240px;
+  align-self: center;
+  justify-self: end;
+}
+
+header > .address {
+  margin-right: 25px;
+}
