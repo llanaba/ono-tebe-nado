@@ -1,10 +1,22 @@
-body {
-  outline: 1px solid black;
+/* ОБЩИЕ СТИЛИ
+стили элементов, не относящихся к конкретным блокам */
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
 }
+
+/* HEADER 
+стили, относящиеся к блоку header (меню, логотип, адрес) */
 
 .header {
   display: grid;
-  /* 136px — размер логотипа по центру хедера */
+  /* 136px — размер логотипа, расположенного по центру хедера */
   grid-template-columns: 1fr 136px 1fr;
   padding: 92px 24px 96px;
 }
@@ -29,6 +41,7 @@ body {
 }
 
 .header__link_active {
+  text-decoration: none;
   border-bottom: 1px solid #000;
 }
 
@@ -45,25 +58,23 @@ header > .address {
   margin-right: 25px;
 }
 
+/* COVER 
+стили, относящиеся к блоку cover */
+
 .cover {
   position: relative;
   background-image: url(/images/cover.jpg);
   background-size: cover;
   background-position: center;
-  outline: 1px solid slategray;
   z-index: -2;
 }
 
 .cover__title {
   font-size: 100px;
   font-weight: 700;
-  /* line-height: 1.15; */
-  line-height: 1.21;
   color: #fff;
   text-transform: uppercase;
-  /* 135 - соответствует размеру в фигме, 125 - подогнано под pixel perfect */
-  /* padding: 165px 50px 135px; */
-  padding: 165px 50px 125px;
+  padding: 165px 50px 135px;
   letter-spacing: 0.3em;
 }
 
@@ -116,10 +127,88 @@ header > .address {
   padding: 12px 32px;
 }
 
-.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  z-index: -1;
+/* LOTS 
+стили, относящиеся к блоку lots: заголовок, ссылка и список карточек */
+
+.lots {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 179px 24px 0;
+}
+
+.lots__heading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 334px;
+  min-height: 563px;
+  padding: 51px 40px 48px;
+}
+
+.card_type_film {
+  position: relative;
+  background-image: url(/images/card-lot-01.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.card_type_book {
+  position: relative;
+  background-image: url(/images/card-lot-02.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.card_type_picture {
+  position: relative;
+  background-image: url(/images/card-lot-03.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.lots__look-more-link {
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: lowercase;
+  padding-left: 40px;
 }
