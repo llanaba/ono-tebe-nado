@@ -167,7 +167,7 @@ header > .address {
 
 .card_type_film {
   position: relative;
-  background-image: url(/images/card-lot-01.jpg);
+  background-image: url(./images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -175,7 +175,7 @@ header > .address {
 
 .card_type_book {
   position: relative;
-  background-image: url(/images/card-lot-02.jpg);
+  background-image: url(./images/card-lot-02.jpg);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -183,7 +183,7 @@ header > .address {
 
 .card_type_picture {
   position: relative;
-  background-image: url(/images/card-lot-03.jpg);
+  background-image: url(./images/card-lot-03.jpg);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -215,6 +215,9 @@ header > .address {
   text-transform: lowercase;
   padding-left: 40px;
 }
+
+/* ABOUT
+стили, относящиеся к блоку about */
 
 .about {
   padding: 184px 24px 180px;
@@ -262,6 +265,9 @@ header > .address {
   font-size: 20px;
   line-height: 24px;
 }
+
+/* FOOTER  
+стили, относящиеся к блоку footer (часть стилей переиспользована из header: .address) */
 
 .footer {
   padding: 0 50px 88px;
