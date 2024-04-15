@@ -11,6 +11,15 @@
   right: 0;
 }
 
+.link_active {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.list-item_no-bullit {
+  list-style: none;
+}
+
 /* HEADER 
 стили, относящиеся к блоку header (меню, логотип, адрес) */
 
@@ -32,17 +41,12 @@
   list-style: circle;
   font-size: 18px;
   line-height: 1.3;
-  gap: 28px;
-  justify-content: center;
+  gap: 26px;
+  /* justify-content: center; */
 }
 
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
-
-.header__link_active {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
+.header__links-list-item {
+  outline: 1px solid palevioletred;
 }
 
 .address {
@@ -167,7 +171,7 @@ header > .address {
 
 .card_type_film {
   position: relative;
-  background-image: url(./images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -175,7 +179,7 @@ header > .address {
 
 .card_type_book {
   position: relative;
-  background-image: url(./images/card-lot-02.jpg);
+  background-image: url(../images/card-lot-02.jpg);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -183,7 +187,7 @@ header > .address {
 
 .card_type_picture {
   position: relative;
-  background-image: url(./images/card-lot-03.jpg);
+  background-image: url(../images/card-lot-03.jpg);
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -291,6 +295,10 @@ header > .address {
 
 .footer__menu-list-item {
   min-width: 150px;
+}
+
+.footer__menu-link {
+  text-decoration: none;
 }
 
 .footer__social-list {
