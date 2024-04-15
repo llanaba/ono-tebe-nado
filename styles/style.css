@@ -26,13 +26,11 @@
   display: grid;
   /* 136px — размер логотипа, расположенного по центру хедера */
   grid-template-columns: 1fr 136px 1fr;
-  padding: 92px 24px 96px;
+  padding: 92px 50px 96px;
 }
 
 .header__menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-self: center;
 }
 
 .header__links-list {
@@ -50,10 +48,6 @@
   width: 240px;
   align-self: center;
   justify-self: end;
-}
-
-.header > .address {
-  margin-right: 25px;
 }
 
 /* COVER 
